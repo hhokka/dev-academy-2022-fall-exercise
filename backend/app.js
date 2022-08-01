@@ -25,11 +25,10 @@ app.use(express.json())
 
 app.use('/api/journeys', journeysRouter)
 
-/* Enable this when writing tests */
-/* if (process.env.NODE_ENV === 'test') {
+if (process.env.NODE_ENV === 'test') {
   const testingRouter = require('./controllers/testing')
   app.use('/api/testing', testingRouter)
-} */
+}
 
 app.use(errorHandler)
 

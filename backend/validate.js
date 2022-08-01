@@ -1,26 +1,18 @@
-/** csv file
- name,phone,email,country
- john,123a,john@ph.com,PH
- doe,456,doe@us.com
- */
+const fs = require('fs')
+const csv = require('@fast-csv/parse')
 
-const csv = require('csv-validator')
-const csvFilePath = './data/small-dataset.csv'
-const headers = {
-  Departure: '', // any string
-  phone: 1, // any number
-  // eslint-disable-next-line no-useless-escape
-  email: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-  country: '' // add '_' as first character of the key to indicate as optional
-}
+
+
 
 
 const runValidation = () => {
-  console.log('test here')
-  csv(csvFilePath, headers)
-    .then(console.log('inside csv-validator'))
-    .then(console.log)
-    .catch(console.error) // [ 'Row 1: phone must be a type number', 'Row 2: country is required' ]
-
+  fs.createReadStream('./data/very-small-dataset.csv')
+    .pipe(csv.parse({ headers: true }))
+    .validate(data => data.Departure === '2021-05-31T23:57:25')
+    .on('error', error => console.error(error))
+    .on('data', row => console.log(`ROW=${JSON.stringify(row)}`))
+    .on('data-invalid', (row, rowNumber) => console.log(`Invalid [rowNumber=${rowNumber}] [row=${JSON.stringify(row)}]`))
+    .on('end', rowCount => console.log(`Parsed ${rowCount} rows`))
 }
+
 module.exports = { runValidation }

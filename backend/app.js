@@ -32,6 +32,7 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 validate.runValidation()
+//validate.runValidation2()
 app.use(errorHandler)
 
 

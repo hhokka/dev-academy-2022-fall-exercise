@@ -19,3 +19,5 @@ const load = (line) => {
   journeys = line.split(',')
   console.log('load journeys: ', journeys)
 }
+
+exports.load = load

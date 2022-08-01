@@ -13,7 +13,7 @@
 | 1.8.22| 	0,5| removed unused middleware, added capability to add journeys |
 | 1.8.22|   0,5| added reset to controller journeys|
 | 1.8.22|   0,5| added required:true to journey schema|
-| | | |
+| 1.8.22| 	1,5| added validate.js, added very-small-dataset.csv|
 | | | |
 | | | |
 | | | |

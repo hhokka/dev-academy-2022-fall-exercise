@@ -6,9 +6,6 @@ const mongoose = require('mongoose')
 require('express-async-errors')
 
 const journeysRouter = require('./controllers/journeys')
-/* const blogsRouter = require('./controllers/blogs')
-const usersRouter = require('./controllers/users')
-const loginRouter = require('./controllers/login') */
 const { errorHandler } = require('./utils/middleware')
 const logger = require('./utils/logger')
 
@@ -27,14 +24,12 @@ app.use(express.static('build'))
 app.use(express.json())
 
 app.use('/api/journeys', journeysRouter)
-/* app.use('/api/login', loginRouter)
-app.use('/api/blogs', userExtractor, blogsRouter)
-app.use('/api/users', usersRouter) */
 
-if (process.env.NODE_ENV === 'test') {
+/* Enable this when writing tests */
+/* if (process.env.NODE_ENV === 'test') {
   const testingRouter = require('./controllers/testing')
   app.use('/api/testing', testingRouter)
-}
+} */
 
 app.use(errorHandler)
 

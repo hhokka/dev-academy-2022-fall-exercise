@@ -10,7 +10,7 @@
 | 1.8.22|   0,5| added index.js(express), config, logger and journeys controller|
 | 1.8.22|     1| added app.js and middleware.js|
 | 1.8.22|     2| added controller testing.js|
-| | | |
+| 1.8.22| 	0,5| removed unused middleware, added capability to add journeys |
 | | | |
 | | | |
 

@@ -16,5 +16,6 @@ readInterface.on('line', function(line) {
 })
 
 const load = (line) => {
-  console.log('load line: ', line)
+  journeys = line.split(',')
+  console.log('load journeys: ', journeys)
 }

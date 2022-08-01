@@ -7,3 +7,5 @@ router.get('/', async (request, response) => {
     .find({})
   response.json(journeys)
 })
+
+module.exports = router

@@ -11,6 +11,11 @@
 | 1.8.22|     1| added app.js and middleware.js|
 | 1.8.22|     2| added controller testing.js|
 | 1.8.22| 	0,5| removed unused middleware, added capability to add journeys |
+| 1.8.22|   0,5| added reset to controller journeys|
+| | | |
+| | | |
+| | | |
+| | | |
 | | | |
 | | | |
 

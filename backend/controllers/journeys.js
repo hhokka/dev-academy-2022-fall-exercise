@@ -17,4 +17,9 @@ router.post('/', async (request, response) => {
   response.status(201).json(savedJourney)
 })
 
+router.post('/reset', async (request, response) => {
+  await Journey.deleteMany({})
+
+  response.status(204).end()
+})
 module.exports = router

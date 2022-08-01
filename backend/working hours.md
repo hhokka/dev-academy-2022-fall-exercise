@@ -8,10 +8,10 @@
 | 1.8.22|   1,5| replaced small-dataset.csv with a larger dataset|
 | 1.8.22|   0,5| added Mongoose model for journeys|
 | 1.8.22|   0,5| added index.js(express), config, logger and journeys controller|
-| 1.8.22|     1| added app.js, middleware.js|
-| | | |
+| 1.8.22|     1| added app.js and middleware.js|
+| 1.8.22|     2| added controller testing.js|
 | | | |
 | | | |
 | | | |
 
-| total |  4   | | 
+| total |  7   | | 

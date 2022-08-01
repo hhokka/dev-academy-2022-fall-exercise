@@ -1,10 +1,20 @@
 const fs = require('fs')
+const readline = require('readline')
 
-try {
-  const data = fs.readFileSync('./data/small-dataset.csv', 'utf8')
-  console.log(data)
-  const myArray = data.split(',')
-  console.log(myArray[0])
-} catch (err) {
-  console.error(err)
+const readInterface = readline.createInterface({
+  input: fs.createReadStream('./data/small-dataset.csv'),
+  output: false,
+  console: false
+})
+
+let journeys=[]
+
+readInterface.on('line', function(line) {
+  if(!line.includes('Departure,Return,')){
+    load(line)
+  }
+})
+
+const load = (line) => {
+  console.log('load line: ', line)
 }

@@ -1,21 +1,11 @@
-const fs = require('fs')
-const readline = require('readline')
+const express = require('express')
+const app = express()
+const http = require('http')
+const config = require('./utils/config')
+const logger = require('./utils/logger')
 
-const readInterface = readline.createInterface({
-  input: fs.createReadStream('./data/small-dataset.csv'),
-  output: false,
-  console: false
+const server = http.createServer(app)
+
+server.listen(config.PORT, () => {
+  logger.info(`Server running on port ${config.PORT}`)
 })
-
-let journeys=[]
-
-readInterface.on('line', function(line) {
-  if(!line.includes('Departure,Return,')){
-    load(line)
-  }
-})
-
-const load = (line) => {
-  journeys = line.split(',')
-  console.log('load journeys: ', journeys)
-}

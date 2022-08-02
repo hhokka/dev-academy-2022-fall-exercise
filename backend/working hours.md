@@ -15,11 +15,12 @@
 | 1.8.22|   0,5| added required:true to journey schema|
 | 1.8.22| 	1,5| added validate.js, added very-small-dataset.csv|
 | 1.8.22|   1,5| implemented basic validation  |
-| 1.8.22| 	  2| implemented advanced validation|
-| 1.8.22|     1| loading from .csv to db implemented (load.js)|
-| 1.8.22|   0,5| small changes to app.js and validator.js|
-| 1.8.22|	2,5| modified validator.js|
-| 1.8.22|   0,5| created fronend boilerplate using cra|
+| 2.8.22| 	  2| implemented advanced validation|
+| 2.8.22|     1| loading from .csv to db implemented (load.js)|
+| 2.8.22|   0,5| small changes to app.js and validator.js|
+| 2.8.22|	2,5| modified validator.js|
+| 2.8.22|   0,5| created fronend boilerplate using cra|
+| 2.8.22|   0,5| configured linter|
 
 
 | total |  x   | | 

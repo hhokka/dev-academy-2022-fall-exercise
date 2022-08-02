@@ -1,36 +1,36 @@
 const mongoose = require('mongoose')
 
 const schema = mongoose.Schema({
-  departure: {
-    type: Date,
-    required: true
-  },
-  return: {
-    type: Date,
-    required: true
-  },
-  departureStationId: {
-    type: Number,
-    required: true
-  },
-  departureStationName: {
+  Departure: {
     type: String,
     required: true
   },
-  returnStationId: {
-    type: Number,
-    required: true
-  },
-  returnStationName: {
+  Return: {
     type: String,
     required: true
   },
-  coveredDistance: {
-    type: Number,
+  'Departure station id': {
+    type: String,
     required: true
   },
-  duration: {
-    type: Number,
+  'Departure station name': {
+    type: String,
+    required: true
+  },
+  'Return station id': {
+    type: String,
+    required: true
+  },
+  'Return station name': {
+    type: String,
+    required: true
+  },
+  'Covered distance (m)': {
+    type: String,
+    required: true
+  },
+  'Duration (sec.)': {
+    type: String,
     required: true
   }
 

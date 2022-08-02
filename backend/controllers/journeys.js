@@ -10,7 +10,8 @@ router.get('/', async (request, response) => {
 
 router.post('/', async (request, response) => {
   console.log('request.body: ', request.body)
-  const journey = new Journey({ ...request.body })
+  //const journey = new Journey({ ...request.body })
+  const journey = new Journey({ departure: 'hans hokka' })
 
   const savedJourney = await journey.save()
 

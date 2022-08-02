@@ -15,8 +15,8 @@
 | 1.8.22|   0,5| added required:true to journey schema|
 | 1.8.22| 	1,5| added validate.js, added very-small-dataset.csv|
 | 1.8.22|   1,5| implemented basic validation  |
-| | | |
-| | | |
+| 1.8.22| 	  2| implemented advanced validation|
+| 1.8.22|     1| loading from .csv to db implemented (load.js)|
 | | | |
 
 | total |  x   | | 

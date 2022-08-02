@@ -19,5 +19,7 @@
 | 1.8.22|     1| loading from .csv to db implemented (load.js)|
 | 1.8.22|   0,5| small changes to app.js and validator.js|
 | 1.8.22|	2,5| modified validator.js|
+| 1.8.22|   0,5| created fronend boilerplate using cra|
+
 
 | total |  x   | | 

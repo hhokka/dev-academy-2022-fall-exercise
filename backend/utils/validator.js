@@ -1,5 +1,5 @@
-//const fs = require('fs')
-//const csv = require('@fast-csv/parse')
+const fs = require('fs')
+const csv = require('@fast-csv/parse')
 
 
 
@@ -10,10 +10,10 @@ john,123a,john@ph.com,PH
 doe,456,doe@us.com
 */
 
-const csv = require('csv-validator')
+/* const csv = require('csv-validator')
 const csvFilePath = './data/very-small-dataset.csv'
 const headers = {
-  Departure: '1', // any string
+  Departure: 1,
   Return: '',
   'Departure station id': '',
   'Departure station name': '',
@@ -24,11 +24,16 @@ const headers = {
 }
 
 const runValidation = () => {
+  let validated = null
   csv(csvFilePath, headers)
-    .then(event => console.log('event: ', event))
-    .catch(console.error) // [ 'Row 1: phone must be a type number', 'Row 2: country is required' ]
-}
-/* const runValidation = () => {
+    .then(event => {
+      console.log('event: ', event)
+      validated = 'true'
+    })
+    .catch(console.error)
+  return (validated)
+} */
+const runValidation = () => {
   let validated = 'true'
   fs.createReadStream('./data/very-small-dataset.csv')
     .pipe(csv.parse({ headers: true }))
@@ -53,5 +58,5 @@ const runValidation = () => {
       return validated
     })
 }
- */
+
 module.exports = { runValidation }

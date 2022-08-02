@@ -17,6 +17,7 @@
 | 1.8.22|   1,5| implemented basic validation  |
 | 1.8.22| 	  2| implemented advanced validation|
 | 1.8.22|     1| loading from .csv to db implemented (load.js)|
-| | | |
+| 1.8.22|   0,5| small changes to app.js and validator.js|
+| 1.8.22|	2,5| modified validator.js|
 
 | total |  x   | | 

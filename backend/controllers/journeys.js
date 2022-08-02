@@ -6,12 +6,12 @@ router.get('/', async (request, response) => {
   const journeys = await Journey
     .find({})
   response.json(journeys)
+  console.log('journeys: ', journeys)
 })
 
 router.post('/', async (request, response) => {
   console.log('request.body: ', request.body)
-  //const journey = new Journey({ ...request.body })
-  const journey = new Journey({ departure: 'hans hokka' })
+  const journey = new Journey({ ...request.body })
 
   const savedJourney = await journey.save()
 

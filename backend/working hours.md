@@ -21,6 +21,6 @@
 | 2.8.22|	2,5| modified validator.js|
 | 2.8.22|   0,5| created fronend boilerplate using cra|
 | 2.8.22|   0,5| configured linter|
-
+| 2.8.22|   1,5| showing data from database to frontend implemented|
 
 | total |  x   | | 

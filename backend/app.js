@@ -37,7 +37,7 @@ const validate = async() => {
   console.log('validated app: ', validated)
 }
 validate()
-//loader.load()
+loader.load()
 //validate.runValidation2()
 app.use(errorHandler)
 

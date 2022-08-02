@@ -34,10 +34,10 @@ if (process.env.NODE_ENV === 'test') {
 
 const validate = async() => {
   const validated = await validator.runValidation()
-  console.log('validated: ', validated)
+  console.log('validated app: ', validated)
 }
 validate()
-loader.load()
+//loader.load()
 //validate.runValidation2()
 app.use(errorHandler)
 

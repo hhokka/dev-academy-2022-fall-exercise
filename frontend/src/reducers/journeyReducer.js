@@ -5,20 +5,21 @@ const journeySlice = createSlice({
   name: 'journeys',
   initialState: [],
   reducers: {
-    setBlogs(state, action) {
-      //console.log('setBlogs: ', action.payload);
+    setJourneys(state, action) {
+      console.log('setJourneys (inside reducer)): ', action.payload)
       return action.payload
     }
   }
 })
 
 export const initializeJourneys = () => {
-  console.log('initializeJourneys: ')
+  console.log('initializeJourneys here ')
   return async dispatch => {
     const journeys = await journeyService.getAll()
-    dispatch(setBlogs(journeys))
+    console.log('inside dispatch here')
+    dispatch(setJourneys(journeys))
   }
 }
 
-export const { setBlogs } = journeySlice.actions
+export const { setJourneys } = journeySlice.actions
 export default journeySlice.reducer

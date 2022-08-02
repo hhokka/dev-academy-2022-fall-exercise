@@ -22,5 +22,6 @@
 | 2.8.22|   0,5| created fronend boilerplate using cra|
 | 2.8.22|   0,5| configured linter|
 | 2.8.22|   1,5| showing data from database to frontend implemented|
-| 2.8.22|     1| minor changes to journeys.js and App.js
+| 2.8.22|     1| minor changes to journeys.js and App.js|
+| 2.8.22|     1| added displaying data from objects, from database to frontend
 | total |  x   | | 

@@ -1,23 +1,17 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
-import journeyService from './services/journeys'
+import { useSelector, useDispatch } from 'react-redux'
+import { initializeJourneys } from './reducers/journeyReducer'
 const App = () => {
-  const [journeys, setJourneys] = useState('')
-
+  const dispatch = useDispatch()
+  const journeys = useSelector(state => state.journeys)
   useEffect(() => {
-    getJourneys()
-  },[])
-  const allJourneys = null
-  const getJourneys = async() => {
-    const allJourneys = await journeyService.getAll()
-    console.log('allJourneys: ', allJourneys)
-    setJourneys(allJourneys)
-    console.log('journeys: ', journeys)
-  }
+    dispatch(initializeJourneys())
+  },[dispatch])
+  console.log('journeys App.js: ', journeys)
   return(
     <div>
       <p>Hello world</p>
-      <p>{JSON.stringify(journeys)}</p>
       <p>{journeys[0]['Departure']}</p>
     </div>
   )

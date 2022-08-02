@@ -8,7 +8,8 @@ require('express-async-errors')
 const journeysRouter = require('./controllers/journeys')
 const { errorHandler } = require('./utils/middleware')
 const logger = require('./utils/logger')
-const validate = require('./validate')
+const validator = require('./utils/validator')
+const loader = require('./utils/loader')
 
 logger.info('connecting to', config.MONGODB_URI)
 
@@ -31,7 +32,12 @@ if (process.env.NODE_ENV === 'test') {
   app.use('/api/testing', testingRouter)
 }
 
-validate.runValidation()
+const validate = async() => {
+  const validated = await validator.runValidation()
+  console.log('validated: ', validated)
+}
+validate()
+loader.load()
 //validate.runValidation2()
 app.use(errorHandler)
 

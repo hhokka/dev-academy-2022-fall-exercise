@@ -1,8 +1,21 @@
-const fs = require('fs')
+/* const fs = require('fs')
+const csvlint = require('csvlint')
+const rs = fs.createReadStream('./data/very-small-dateset.csv')
+const ws = fs.createWriteStream('./data/output.csv')
+//csvlint = csvlint()
+rs.pipe(csvlint).pipe(ws)
+csvlint.on('readable', function() {
+})
+
+csvlint.on('data', function(data) {
+  console.log(data)
+})
+ */
+/* const fs = require('fs')
 const csv = require('@fast-csv/parse')
 
 
-
+ */
 
 /** csv file
 name,phone,email,country
@@ -33,7 +46,7 @@ const runValidation = () => {
     .catch(console.error)
   return (validated)
 } */
-const runValidation = () => {
+/* const runValidation = () => {
   let validated = 'true'
   fs.createReadStream('./data/very-small-dataset.csv')
     .pipe(csv.parse({ headers: true }))
@@ -58,5 +71,8 @@ const runValidation = () => {
       return validated
     })
 }
-
+ */
+const runValidation = () => {
+  console.log('inside validator')
+}
 module.exports = { runValidation }

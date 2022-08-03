@@ -32,11 +32,7 @@ if (process.env.NODE_ENV === 'test') {
   app.use('/api/testing', testingRouter)
 }
 
-const validate = async() => {
-  const validated = await validator.runValidation()
-  console.log('validated app: ', validated)
-}
-validate()
+validator.runValidation()
 loader.load()
 //validate.runValidation2()
 app.use(errorHandler)

@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Routes, Route, Link, useNavigate, useParams
 } from 'react-router-dom'
+import SingleStation from './components/SingleStation'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -28,7 +29,7 @@ const App = () => {
         <Route path="/" element={<JourneyList/>} />
         <Route path="/stations" element={<StationList/>} />
         <Route path="/single" element={<JourneyList/>} />
-        <Route path="/stations/:id" element={<JourneyList/>} />
+        <Route path="/stations/:id" element={<SingleStation/>} />
       </Routes>
     </>
   )

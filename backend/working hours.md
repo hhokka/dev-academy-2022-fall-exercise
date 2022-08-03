@@ -28,4 +28,7 @@
 | 3.8.22|	0,5| tried a solution to validate .csv, didn't work|
 | 3.8.22|  0,25| modified mongoose schema: 'Departure' and 'Return' to 'departure' and 'return'|
 | 3.8.22|	  1| implemented journey list view|
-| total |  x   | | 
+| 3.8.22|  0,75| added routing|
+| 3.8.22|  0,25| implemented station list view|
+| 3.8.22|  1,25| implemented part of single station view|
+| total |    x | | 

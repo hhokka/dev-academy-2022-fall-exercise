@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { initializeJourneys } from './reducers/journeyReducer'
+import JourneyList from './components/JourneyList'
 const App = () => {
   const dispatch = useDispatch()
   const journeys = useSelector(state => state.journeys)
@@ -10,10 +11,7 @@ const App = () => {
   },[dispatch])
   console.log('journeys App.js: ', journeys)
   return(
-    <div>
-      <p>Hello world</p>
-      <p>{journeys[0]['Departure']}</p>
-    </div>
+    <JourneyList></JourneyList>
   )
 }
 export default App

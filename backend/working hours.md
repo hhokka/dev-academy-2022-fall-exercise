@@ -25,5 +25,7 @@
 | 2.8.22|     1| minor changes to journeys.js and App.js|
 | 2.8.22|     1| added displaying data from objects, from database to frontend|
 | 3.8.22|   0,5| modified mongoose schema: deleted spaces, read duration from object to variable|
-| 3.8.22|	0,5| tried a solution to validate .csv, didn't work
+| 3.8.22|	0,5| tried a solution to validate .csv, didn't work|
+| 3.8.22|  0,25| modified mongoose schema: 'Departure' and 'Return' to 'departure' and 'return'|
+| 3.8.22|	  1| implemented journey list view|
 | total |  x   | | 

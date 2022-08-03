@@ -39,6 +39,20 @@ const schema = mongoose.Schema({
 schema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString()
+    returnedObject.departureStationId = returnedObject['Departure station id'].toString()
+    returnedObject.departureStationName = returnedObject['Departure station name'].toString()
+    returnedObject.returnStationId = returnedObject['Return station id'].toString()
+    returnedObject.returnStationName = returnedObject['Return station name'].toString()
+    returnedObject.coveredDistance = returnedObject['Covered distance (m)'].toString()
+    returnedObject.duration = returnedObject['Duration (sec'][')'].toString()
+
+    delete returnedObject['Departure station id']
+    delete returnedObject['Departure station name']
+    delete returnedObject['Return station id']
+    delete returnedObject['Return station name']
+    delete returnedObject['Covered distance (m)']
+    delete returnedObject['Duration (sec']
+
     delete returnedObject._id
     delete returnedObject.__v
   }

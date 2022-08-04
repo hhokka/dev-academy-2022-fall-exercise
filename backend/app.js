@@ -35,8 +35,9 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 validator.runValidation()
-loader.loadJourneys()
-loader.loadBikeStations()
+loader.loadJourneys('./data/small-dataset.csv')
+loader.loadJourneys('./data/very-small-dataset.csv')
+loader.loadBikeStations('./data/bikeStationDataset.csv')
 
 //validate.runValidation2()
 app.use(errorHandler)

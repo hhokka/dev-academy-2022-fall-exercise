@@ -21,17 +21,17 @@ const addBikeStations = async (data) => {
   console.log('savedBikeStation: ', savedBikeStation)
 
 }
-const loadJourneys = () => {
-  fs.createReadStream('./data/very-small-dataset-modified.csv')
+const loadJourneys = (fileName) => {
+  fs.createReadStream(fileName)
     .pipe(csv.parse({ headers: true }))
     .on('data', (data) => {
       addJourney(data)
     })
 }
 
-const loadBikeStations = () => {
+const loadBikeStations = (fileName) => {
   console.log('inside loadBikeStations')
-  fs.createReadStream('./data/bikeStationDataset.csv')
+  fs.createReadStream(fileName)
     .pipe(csv.parse({ headers: true }))
     .on('data', (data) => {
       //console.log('addBikeStations, data: ', data)

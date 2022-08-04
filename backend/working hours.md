@@ -34,5 +34,7 @@
 | 4.8.22|  0,25| added display return stations to single station view|
 | 4.8.22|  0,5 | added functionality to read bikeStation data to database|
 | 4.8.22|     2| added functionality to display station address, cleaned code|
-| 4.8.22|   0,5| replaced render with createRoot
+| 4.8.22|   0,5| replaced render with createRoot|
+| 4.8.22|   1,5| debugged display station address|
+| 4.8.22|	0,5| modified load functions to accept file name|
 | total |    x | | 

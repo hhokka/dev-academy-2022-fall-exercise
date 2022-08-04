@@ -7,7 +7,6 @@ const Menu = () => {
     < div >
       <Link style={padding} to="/">Journey list</Link>
       <Link style={padding} to="/stations">Station list</Link>
-      <Link style={padding} to="/single">Single station</Link>
     </div >
   )
 }

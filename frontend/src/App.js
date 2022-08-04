@@ -22,7 +22,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<JourneyList/>} />
         <Route path="/stations" element={<StationList/>} />
-        <Route path="/single" element={<JourneyList/>} />
         <Route path="/stations/:id" element={<SingleStation/>} />
       </Routes>
     </>

@@ -6,11 +6,9 @@ router.get('/', async (request, response) => {
   const bikeStation = await BikeStation
     .find({})
   response.json(bikeStation)
-  console.log('journeys: ', bikeStation)
 })
 
 router.post('/', async (request, response) => {
-  console.log('request.body: ', request.body)
   const bikeStation = new BikeStation({ ...request.body })
 
   const savedBikeStation = await bikeStation.save()

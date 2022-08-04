@@ -10,8 +10,6 @@ const SingleStation = () => {
   const totalNumberStartingFromStation = journeys.filter(n => n.departureStationName === journey.departureStationName).length
   const totalNumberEndingAtStation = journeys.filter(n => n.returnStationName === journey.departureStationName).length
   const stationAddress = bikeStations.filter(n => n.Nimi === journey.departureStationName)[0].Osoite
-  console.log('bikeStations.filter: ', bikeStations.filter(n => n.Nimi === 'Linnanmäki'))
-  console.log('journey.departureStationName: ',journey.departureStationName)
 
   return (
     <div key={journey.id}>

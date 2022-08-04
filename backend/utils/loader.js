@@ -15,7 +15,6 @@ const addJourney = async (data) => {
 }
 
 const addBikeStations = async (data) => {
-  console.log('inside addBikeStations')
   const bikeStations = new BikeStation({ ...data })
   const savedBikeStation = await bikeStations.save()
   console.log('savedBikeStation: ', savedBikeStation)
@@ -30,7 +29,6 @@ const loadJourneys = (fileName) => {
 }
 
 const loadBikeStations = (fileName) => {
-  console.log('inside loadBikeStations')
   fs.createReadStream(fileName)
     .pipe(csv.parse({ headers: true }))
     .on('data', (data) => {

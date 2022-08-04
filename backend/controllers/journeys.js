@@ -6,11 +6,9 @@ router.get('/', async (request, response) => {
   const journeys = await Journey
     .find({ }).limit(100)
   response.json(journeys)
-  console.log('journeys: ', journeys)
 })
 
 router.post('/', async (request, response) => {
-  console.log('request.body: ', request.body)
   const journey = new Journey({ ...request.body })
 
   const savedJourney = await journey.save()

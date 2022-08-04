@@ -10,7 +10,6 @@ const StationList = () => {
       t.departureStationName === value.departureStationName
     ))
   )
-  console.log('journeys.arr', journeys.arr)
   return(
     <div>
       <p>{journeysNoDuplicates.map((journey) => {

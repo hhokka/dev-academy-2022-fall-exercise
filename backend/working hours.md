@@ -31,4 +31,5 @@
 | 3.8.22|  0,75| added routing|
 | 3.8.22|  0,25| implemented station list view|
 | 3.8.22|  1,25| implemented part of single station view|
+| 3.8.22|  0,25| added display return stations to single station view|
 | total |    x | | 

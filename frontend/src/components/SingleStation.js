@@ -10,7 +10,8 @@ const SingleStation = () => {
   journeys = useSelector(state => state.journeys)
   journey = journeys.find(n => n.id === id)
   const totalNumberStartingFromStation = journeys.filter(n => n.departureStationName === journey.departureStationName).length
-  const totalNumberEndingAtStation = journeys.filter(n => n.returnStationName === journey.returnStationName).length
+  const totalNumberEndingAtStation = journeys.filter(n => n.returnStationName === journey.departureStationName).length
+  console.log('journeys.filter(n => n.returnStationName === journey.returnStationName): ', journeys.filter(n => n.returnStationName === journey.departureStationName))
   return (
     <div key={journey.id}>
 

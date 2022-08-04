@@ -13,7 +13,7 @@ const addJourney = async (data) => {
   }
 }
 const load = () => {
-  fs.createReadStream('./data/very-small-dataset.csv')
+  fs.createReadStream('./data/very-small-dataset-modified.csv')
     .pipe(csv.parse({ headers: true }))
     .on('data', (data) => {
       addJourney(data)

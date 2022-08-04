@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 validator.runValidation()
-//oader.loadJourneys()
+loader.loadJourneys()
 loader.loadBikeStations()
 
 //validate.runValidation2()

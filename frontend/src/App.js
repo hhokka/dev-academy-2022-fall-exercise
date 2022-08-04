@@ -1,26 +1,20 @@
-/* eslint-disable no-unused-vars */
-import { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import { initializeJourneys } from './reducers/journeyReducer'
+import { initializeBikeStations } from './reducers/bikeStationReducer'
 import JourneyList from './components/JourneyList'
 import StationList from './components/StationList'
 import Menu from './components/Menu'
-import {
-  BrowserRouter as Router,
-  Routes, Route, Link, useNavigate, useParams
-} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import SingleStation from './components/SingleStation'
 
 const App = () => {
   const dispatch = useDispatch()
-  const journeys = useSelector(state => state.journeys)
 
   useEffect(() => {
     dispatch(initializeJourneys())
+    dispatch(initializeBikeStations())
   },[dispatch])
-
-  console.log('journeys App.js: ', journeys)
-
 
   return(
     <>

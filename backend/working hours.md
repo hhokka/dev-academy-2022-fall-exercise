@@ -37,4 +37,7 @@
 | 4.8.22|   0,5| replaced render with createRoot|
 | 4.8.22|   1,5| debugged display station address|
 | 4.8.22|	0,5| modified load functions to accept file name|
+| 4.8.22|   1,5| removed duplicates from station list|
+| 4.8.22|  0,25| cleaned code|
+| 4.8.22|     1| installed lfs, added large csv files|
 | total |    x | | 

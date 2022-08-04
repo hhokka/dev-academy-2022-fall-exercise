@@ -27,7 +27,7 @@ const schema = mongoose.Schema({
   },
   'Covered distance (m)': {
     type: String,
-    required: true
+    required: false
   },
   'Duration (sec.)': {
     type: String,

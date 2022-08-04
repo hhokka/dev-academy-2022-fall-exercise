@@ -23,7 +23,7 @@ john,123a,john@ph.com,PH
 doe,456,doe@us.com
 */
 
-/* const csv = require('csv-validator')
+const csv = require('csv-validator')
 const csvFilePath = './data/very-small-dataset.csv'
 const headers = {
   Departure: 1,
@@ -45,7 +45,7 @@ const runValidation = () => {
     })
     .catch(console.error)
   return (validated)
-} */
+}
 /* const runValidation = () => {
   let validated = 'true'
   fs.createReadStream('./data/very-small-dataset.csv')
@@ -72,7 +72,7 @@ const runValidation = () => {
     })
 }
  */
-const runValidation = () => {
+/* const runValidation = () => {
   console.log('inside validator')
-}
+} */
 module.exports = { runValidation }

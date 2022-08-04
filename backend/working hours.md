@@ -31,5 +31,8 @@
 | 3.8.22|  0,75| added routing|
 | 3.8.22|  0,25| implemented station list view|
 | 3.8.22|  1,25| implemented part of single station view|
-| 3.8.22|  0,25| added display return stations to single station view|
+| 4.8.22|  0,25| added display return stations to single station view|
+| 4.8.22|  0,5 | added functionality to read bikeStation data to database|
+| 4.8.22|     2| added functionality to display station address, cleaned code|
+| 4.8.22|   0,5| replaced render with createRoot
 | total |    x | | 

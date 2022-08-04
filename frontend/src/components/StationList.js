@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom'
 
 const StationList = () => {
   const journeys = useSelector(state => state.journeys)
+  //const journeysNoDuplicates = [...journeys.reduce((map, obj) => map.set(obj.id, obj), new Map()).values()]
+  const journeysNoDuplicates = journeys.filter((value, index, self) =>
+    index === self.findIndex((t) => (
+      t.departureStationName === value.departureStationName
+    ))
+  )
+  console.log('journeys.arr', journeys.arr)
   return(
     <div>
-      <p>{journeys.map((journey) => {
+      <p>{journeysNoDuplicates.map((journey) => {
         return (
           <li key={journey.id}>
           Departure station: <Link to={`/stations/${journey.id}`}>{journey.departureStationName}</Link>

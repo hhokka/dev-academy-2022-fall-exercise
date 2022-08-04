@@ -4,7 +4,7 @@ const Journey = require('../models/journey')
 
 router.get('/', async (request, response) => {
   const journeys = await Journey
-    .find({})
+    .find({ }).limit(100)
   response.json(journeys)
   console.log('journeys: ', journeys)
 })

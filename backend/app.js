@@ -33,14 +33,29 @@ if (process.env.NODE_ENV === 'test') {
   const testingRouter = require('./controllers/testing')
   app.use('/api/testing', testingRouter)
 }
-const journeyValidated = validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
-//validator.runJourneyValidation('./data/2021-05.csv')
-//validator.runJourneyValidation('./data/2021-06.csv')
-//validator.runJourneyValidation('./data/2021-07.csv')
-//validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
-const bikeStationValidated = validator.runBikeStationValidation('./data/small-bikeStationDataset.csv')
-console.log('journeyValidated:  ', journeyValidated)
-console.log('bikeStationValidated:  ', bikeStationValidated)
+const validate = async () => {
+
+  /* ENABLE THIS WHEN EVERYTING ELSE IS READY
+  /* const validateJourneys1 = await validator.runJourneyValidation('2021-05.csv')
+  const validateJourneys2 = await validator.runJourneyValidation('2021-06.csv')
+  const validateJourneys3 = await validator.runJourneyValidation('2021-07.csv')
+  const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
+ */
+  const validateJourneys1 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
+  const validateJourneys2 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
+  const validateJourneys3 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
+  const validateBikeStations1 = await validator.runBikeStationValidation('./data/small-bikeStationDataset.csv')
+  // eslint-disable-next-line no-console
+  console.log('First journey dataset validated: ', validateJourneys1)
+  // eslint-disable-next-line no-console
+  console.log('Second journey dataset validated: ', validateJourneys2)
+  // eslint-disable-next-line no-console
+  console.log('Third journey dataset validated: ', validateJourneys3)
+  // eslint-disable-next-line no-console
+  console.log('Bike Station dataset validated: ', validateBikeStations1)
+}
+validate()
+
 //loader.loadJourneys('./data/2021-05.csv')
 //loader.loadJourneys('./data/2021-06.csv')
 //loader.loadJourneys('./data/2021-07.csv')

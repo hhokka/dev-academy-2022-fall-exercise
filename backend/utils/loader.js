@@ -9,6 +9,7 @@ const addJourney = async (data) => {
       ...data
     })
     const savedJourney = await journey.save()
+    // eslint-disable-next-line no-console
     console.log('savedJourney: ', savedJourney)
 
   }
@@ -17,6 +18,7 @@ const addJourney = async (data) => {
 const addBikeStations = async (data) => {
   const bikeStations = new BikeStation({ ...data })
   const savedBikeStation = await bikeStations.save()
+  // eslint-disable-next-line no-console
   console.log('savedBikeStation: ', savedBikeStation)
 
 }

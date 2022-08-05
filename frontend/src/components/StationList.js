@@ -15,7 +15,7 @@ const StationList = () => {
       <p>{journeysNoDuplicates.map((journey) => {
         return (
           <li key={journey.id}>
-          Departure station: <Link to={`/stations/${journey.id}`}>{journey.departureStationName}</Link>
+          Departure station: <Link id={journey.id} to={`/stations/${journey.id}`}>{journey.departureStationName}</Link>
           </li>)})}</p>
     </div>
   )

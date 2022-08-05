@@ -5,8 +5,8 @@ const Menu = () => {
   }
   return (
     < div >
-      <Link style={padding} to="/">Journey list</Link>
-      <Link style={padding} to="/stations">Station list</Link>
+      <Link id='journeyList' style={padding} to="/">Journey list</Link>
+      <Link id='stationList' style={padding} to="/stations">Station list</Link>
     </div >
   )
 }

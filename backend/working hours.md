@@ -40,4 +40,10 @@
 | 4.8.22|   1,5| removed duplicates from station list|
 | 4.8.22|  0,25| cleaned code|
 | 4.8.22|     1| installed lfs, added large csv files|
+| 4.8.22|     4| uncommented validation, loaded a large .csv file|
+| 5.8.22|   1,5| modified validation, implemented also for bike stations|
+| 5.8.22|   1,5| completed validation|
+| 5.8.22|   1,5| configured cypress, added first test|
+| 5.8.22|   2,5| modified first cypress test, debugged singlestation.js|
+| 6.8.22|   3,5| debugged singlestation.js, wrote one test more|
 | total |    x | | 

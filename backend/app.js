@@ -10,7 +10,7 @@ const bikeStationsRouter = require('./controllers/bikeStations')
 const { errorHandler } = require('./utils/middleware')
 const logger = require('./utils/logger')
 const validator = require('./utils/validator')
-//const loader = require('./utils/loader')
+const loader = require('./utils/loader')
 
 logger.info('connecting to', config.MONGODB_URI)
 
@@ -60,7 +60,8 @@ validate()
 //loader.loadJourneys('./data/2021-06.csv')
 //loader.loadJourneys('./data/2021-07.csv')
 //loader.loadJourneys('./data/small-dataset.csv')
-//loader.loadJourneys('./data/very-small-dataset.csv')
+loader.loadJourneys('./data/very-small-dataset.csv')
+loader.loadBikeStations('./data/small-bikeStationDataset.csv')
 //loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
 
 app.use(errorHandler)

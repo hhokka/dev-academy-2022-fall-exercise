@@ -9,18 +9,23 @@ const SingleStation = () => {
   let journey = journeys.find(n => n.id === id)
   const totalNumberStartingFromStation = journeys.filter(n => n.departureStationName === journey.departureStationName).length
   const totalNumberEndingAtStation = journeys.filter(n => n.returnStationName === journey.departureStationName).length
-  const stationAddress = bikeStations.filter(n => n.Nimi === journey.departureStationName)[0].Osoite
+  let stationAddress = ''
+  if(bikeStations.filter(n => n.Nimi === journey.departureStationName)[0]){
+    stationAddress = bikeStations.filter(n => n.Nimi === journey.departureStationName)[0].Osoite
+  }
+  if(journey){
 
-  return (
-    <div key={journey.id}>
+    return (
+      <div key={journey.id}>
 
-      <li>Station name: {journey.departureStationName}</li>
-      <li>Station address: {stationAddress}</li>
-      <li>Total number of journeys starting from the station: {totalNumberStartingFromStation}</li>
-      <li>Total number of journeys ending at the station: {totalNumberEndingAtStation}</li>
+        <li>Station name: {journey.departureStationName}</li>
+        <li>Station address: {stationAddress}</li>
+        <li>Total number of journeys starting from the station: {totalNumberStartingFromStation}</li>
+        <li>Total number of journeys ending at the station: {totalNumberEndingAtStation}</li>
 
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default SingleStation

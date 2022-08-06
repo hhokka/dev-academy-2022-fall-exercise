@@ -1,7 +1,7 @@
 /* global cy */
 /// <reference types="cypress" />
 
-describe('example to-do app', () => {
+describe('dev-academy-2022-fall-exercise', () => {
   beforeEach(() => {
     cy.request('POST', 'http://localhost:3001/api/journeys/reset')
     cy.request('POST', 'http://localhost:3001/api/bikeStations/reset')
@@ -151,11 +151,19 @@ describe('example to-do app', () => {
     cy.contains('Journey list')
     cy.contains('Station list')
     cy.contains('Departure station: Töölöntulli | Return station: Pasilan asema | Covered distance in km: 1.87 | Duration in min: 10')
+    cy.contains('Departure station: Töölöntulli | Return station: Pasilan asema | Covered distance in km: 1.87 | Duration in min: 10')
+    cy.contains('Departure station: Näkinsilta | Return station: Vilhonvuorenkatu | Covered distance in km: 1.025 | Duration in min: 7')
+    cy.contains('Departure station: Viiskulma | Return station: Hernesaarenranta | Covered distance in km: 4.318 | Duration in min: 33')
+    cy.contains('Departure station: Viiskulma | Return station: Hernesaarenranta | Covered distance in km: 1.4 | Duration in min: 6')
+
   })
   it('displays station list when clicked', () => {
     cy.visit('http://localhost:3000/')
     cy.get('#stationList').click()
+    cy.contains('Departure station: Koskelan varikko')
     cy.contains('Departure station: Töölöntulli')
+    cy.contains('Departure station: Näkinsilta')
+    cy.contains('Departure station: Viiskulma')
   })
   it('displays single station view when clicked', () => {
     cy.visit('http://localhost:3000/')
@@ -163,5 +171,8 @@ describe('example to-do app', () => {
     cy.contains('Töölöntulli').click()
     cy.contains('Station name: Töölöntulli')
     cy.contains('Mannerheimintie 112')
+    cy.contains('Total number of journeys starting from the station: 1')
+    cy.contains('Total number of journeys ending at the station: 0')
+
   })
 })

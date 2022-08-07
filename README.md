@@ -38,22 +38,22 @@ cypress:open
 ### API
 
     GET http://localhost:3001/api/journeys
-    returns all journeys in database
+Returns all journeys in database
     
     POST http://localhost:3001/api/journeys + body
-    adds a journey to database
+Adds a journey to database
     
     POST http://localhost:3001/api/journeys/reset
-    removes all journeys in database
+Removes all journeys in database
     
     GET http://localhost:3001/api/bikeStations
-    returns all bikeStations in database
+Returns all bikeStations in database
     
     POST http://localhost:3001/api/bikeStations + body
-    adds a bikeStation to database
+Adds a bikeStation to database
     
     POST http://localhost:3001/api/bikeStations/reset
-    removes all bikeStations in database
+Removes all bikeStations in database
 
 ## Record of working hours
 
@@ -111,8 +111,8 @@ cypress:open
 | total | 49,50| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2MDU2NjEzLDE4NjQyMzQwNTQsNTYzNz
-Y3MDkwLC0xMDM1MDExNjExLDE5NjM3NTY4ODMsNjQ1NjczMzE3
-LC0zOTMwMzc0MDMsMjA4NTMzNTE2MCwtMjEzMzE0ODc4MiwyMD
-g5ODk1MTE3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE2MDgxNDY3NzksMzM2MDU2NjEzLDE4Nj
+QyMzQwNTQsNTYzNzY3MDkwLC0xMDM1MDExNjExLDE5NjM3NTY4
+ODMsNjQ1NjczMzE3LC0zOTMwMzc0MDMsMjA4NTMzNTE2MCwtMj
+EzMzE0ODc4MiwyMDg5ODk1MTE3LDczMDk5ODExNl19
 -->

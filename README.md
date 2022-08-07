@@ -1,11 +1,11 @@
-# dev-academy-2022-fall-exercise ![hogster-logo
-](https://looka.com/s/94045795)
+# dev-academy-2022-fall-exercise !
+[hogster logo](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/hogster-logo.png)
 
 With this application it is possible for users to see data of journeys made with city bikes in the Helsinki Capital area. 
 
 ## Dokumentation
 
-[Record of working hours](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/36dcf82f70762eb711b8fb57cdb9cb497787b2c8/backend/working%20hours.md)
+[Record of working hours](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/hogster-logo.png)
 
 ## Installation and running
 
@@ -58,6 +58,6 @@ cypress:open
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTMzNTE2MCwtMjEzMzE0ODc4MiwyMD
-g5ODk1MTE3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTM5MzAzNzQwMywyMDg1MzM1MTYwLC0yMT
+MzMTQ4NzgyLDIwODk4OTUxMTcsNzMwOTk4MTE2XX0=
 -->

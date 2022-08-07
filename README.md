@@ -131,13 +131,16 @@ Removes all bikeStations in database:
 | 7.8.22|   0,5| added more screeshots|
 | 7.8.22|  0,25| added more screeshots #4|
 | 7.8.22|  0,25| added more screeshots #5|
-| total |  52,5| | 
+| 7.8.22|   0,5| modified readme.md|
+| 7.8.22|  0,25| modified code for turning it in
+| total | 53,25| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDgzMzE2OSwyMDAwNjk2NTYwLC0xMj
-k1MTIzNDQ0LDE3ODM2NDcwNDEsMTAwNDk5Nzg1OCw4NDM2Nzky
-NDQsLTEyODE1NzA2NDMsLTE2MDgxNDY3NzksMzM2MDU2NjEzLD
-E4NjQyMzQwNTQsNTYzNzY3MDkwLC0xMDM1MDExNjExLDE5NjM3
-NTY4ODMsNjQ1NjczMzE3LC0zOTMwMzc0MDMsMjA4NTMzNTE2MC
-wtMjEzMzE0ODc4MiwyMDg5ODk1MTE3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTUwNjA4MjQwNCwxNjU1NzQ5MTU1LDIwMD
+A2OTY1NjAsLTEyOTUxMjM0NDQsMTc4MzY0NzA0MSwxMDA0OTk3
+ODU4LDg0MzY3OTI0NCwtMTI4MTU3MDY0MywtMTYwODE0Njc3OS
+wzMzYwNTY2MTMsMTg2NDIzNDA1NCw1NjM3NjcwOTAsLTEwMzUw
+MTE2MTEsMTk2Mzc1Njg4Myw2NDU2NzMzMTcsLTM5MzAzNzQwMy
+wyMDg1MzM1MTYwLC0yMTMzMTQ4NzgyLDIwODk4OTUxMTcsNzMw
+OTk4MTE2XX0=
 -->

@@ -35,16 +35,19 @@ if (process.env.NODE_ENV === 'test') {
 }
 const validate = async () => {
 
-  /* ENABLE THIS WHEN EVERYTING ELSE IS READY
-  /* const validateJourneys1 = await validator.runJourneyValidation('2021-05.csv')
+  const validateJourneys1 = await validator.runJourneyValidation('2021-05.csv')
   const validateJourneys2 = await validator.runJourneyValidation('2021-06.csv')
   const validateJourneys3 = await validator.runJourneyValidation('2021-07.csv')
   const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
- */
+
+  /* Don't remove. These are useful for testing purposes.*/
+  /*
   const validateJourneys1 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
   const validateJourneys2 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
   const validateJourneys3 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
   const validateBikeStations1 = await validator.runBikeStationValidation('./data/small-bikeStationDataset.csv')
+  */
+
   // eslint-disable-next-line no-console
   console.log('First journey dataset validated: ', validateJourneys1)
   // eslint-disable-next-line no-console
@@ -56,13 +59,16 @@ const validate = async () => {
 }
 validate()
 
-//loader.loadJourneys('./data/2021-05.csv')
-//loader.loadJourneys('./data/2021-06.csv')
-//loader.loadJourneys('./data/2021-07.csv')
-//loader.loadJourneys('./data/small-dataset.csv')
-//loader.loadJourneys('./data/very-small-dataset.csv')
-//loader.loadBikeStations('./data/small-bikeStationDataset.csv')
-//loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
+loader.loadJourneys('./data/2021-05.csv')
+loader.loadJourneys('./data/2021-06.csv')
+loader.loadJourneys('./data/2021-07.csv')
+loader.loadBikeStations('./data/small-bikeStationDataset.csv')
+
+/* Don't remove. These are useful for testing purposes. */
+/*
+loader.loadJourneys('./data/small-dataset.csv')
+loader.loadJourneys('./data/very-small-dataset.csv')
+*/
 
 app.use(errorHandler)
 

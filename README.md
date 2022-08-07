@@ -30,11 +30,13 @@ Tests are run with this command
 cypress:open
 ```
 ### Using the application
-![alt text](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot1.png?raw=true)
+![Journey list](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot1.png?raw=true)
+This is the first view, Journey list. Here you
+![Station list](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot2.png?raw=true)
 
-![alt text](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot2.png?raw=true)
+![Single station](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot3.png?raw=true)
 
-![alt text](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot3.png?raw=true)
+![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot4.png?raw=true)
 ### API
 
     GET http://localhost:3001/api/journeys
@@ -108,11 +110,13 @@ Removes all bikeStations in database
 | 7.8.22|  0,25| added more documentation|
 | 7.8.22|  0,25| added a screenshot|
 | 7.8.22|   0,5| added more screeshots|
+| 7.8.22|  0,25| added more screeshots #4|
 | total | 49,50| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDgxNDY3NzksMzM2MDU2NjEzLDE4Nj
-QyMzQwNTQsNTYzNzY3MDkwLC0xMDM1MDExNjExLDE5NjM3NTY4
-ODMsNjQ1NjczMzE3LC0zOTMwMzc0MDMsMjA4NTMzNTE2MCwtMj
-EzMzE0ODc4MiwyMDg5ODk1MTE3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbODQzNjc5MjQ0LC0xMjgxNTcwNjQzLC0xNj
+A4MTQ2Nzc5LDMzNjA1NjYxMywxODY0MjM0MDU0LDU2Mzc2NzA5
+MCwtMTAzNTAxMTYxMSwxOTYzNzU2ODgzLDY0NTY3MzMxNywtMz
+kzMDM3NDAzLDIwODUzMzUxNjAsLTIxMzMxNDg3ODIsMjA4OTg5
+NTExNyw3MzA5OTgxMTZdfQ==
 -->

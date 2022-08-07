@@ -48,4 +48,5 @@
 | 6.8.22|   3,5| debugged singlestation.js, wrote one test more|
 | 6.8.22|     1| modified tests|
 | 7.8.22|     1| added some documentation|
+| 7.8.22|  0,25| added more documentation|
 | total | 49,25| | 

@@ -1,20 +1,28 @@
-# dev-academy-2022-fall-exercise !
+# dev-academy-2022-fall-exercise
 ![logo](https://raw.githubusercontent.com/hhokka/dev-academy-2022-fall-exercise/111dec7357e9309b79bbe22d60f7fe140a9feddd/readme/logo-generic.svg)
-With this application it is possible for users to see data of journeys made with city bikes in the Helsinki Capital area. 
+
+With this application it is possible for users to see data of journeys made with city bikes in the Helsinki Capital area. This application shows the made journeys, all the stations and all the details of the stations.
+
+Chosen technologies include React and Node.js with Express. I chose these because I wanted to practice my skills in these technologies.
+
+## Configurations
+The database settings are in .env file which you got by email. Database is fully configured. Other than what is mentioned in "installation and running" there is no need to configure anything. 
+
 
 ## Installation and running
-
-Clone the repository to your own device
+Clone the repository to your own device:
 ```
 git clone https://github.com/hhokka/dev-academy-2022-fall-exercise.git
 ```
-Install and run backend
+Install and run backend:
 ```
 cd dev-academy-2022-fall-excercise/backend
 npm install
 npm start
 ```
-Install and run frontend
+Install and run frontend:
+
+Open new command line window
 ```
 cd dev-academy-2022-fall-exercise/frontend
 npm install
@@ -30,32 +38,43 @@ Tests are run with this command
 cypress:open
 ```
 ### Using the application
-![Journey list](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot1.png?raw=true)
-This is the first view, Journey list. Here you
-![Station list](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot2.png?raw=true)
 
-![Single station](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot3.png?raw=true)
+This is the Journey list view. Here you can see all the journeys and their details.
+![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot5.png?raw=true)
 
+Here is the Station list. There is listed all the Departure stations.
+![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot6.png?raw=true)
+
+By clicking on a Departure station name in Station list you get that stations details.
+![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot7.png?raw=true)
+
+When you run the backend, the application validates all the .csv files and displays the result (like 'First journey dataset validated: valid')
 ![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot4.png?raw=true)
-### API
 
-    GET http://localhost:3001/api/journeys
-Returns all journeys in database
+
+### API
+Returns all journeys in database:
+```
+GET http://localhost:3001/api/journeys
+```
+Adds a journey to database:
     
-    POST http://localhost:3001/api/journeys + body
-Adds a journey to database
+    POST http://localhost:3001/api/journeys + payload
+Removes all journeys in database:
     
     POST http://localhost:3001/api/journeys/reset
-Removes all journeys in database
+
+Returns all bikeStations in database:
     
     GET http://localhost:3001/api/bikeStations
-Returns all bikeStations in database
+Adds a bikeStation to database:
     
-    POST http://localhost:3001/api/bikeStations + body
-Adds a bikeStation to database
+    POST http://localhost:3001/api/bikeStations + payload
+
+Removes all bikeStations in database:
     
     POST http://localhost:3001/api/bikeStations/reset
-Removes all bikeStations in database
+
 
 ## Record of working hours
 
@@ -111,12 +130,14 @@ Removes all bikeStations in database
 | 7.8.22|  0,25| added a screenshot|
 | 7.8.22|   0,5| added more screeshots|
 | 7.8.22|  0,25| added more screeshots #4|
-| total | 49,50| | 
+| 7.8.22|  0,25| added more screeshots #5|
+| total |  52,5| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzNjc5MjQ0LC0xMjgxNTcwNjQzLC0xNj
-A4MTQ2Nzc5LDMzNjA1NjYxMywxODY0MjM0MDU0LDU2Mzc2NzA5
-MCwtMTAzNTAxMTYxMSwxOTYzNzU2ODgzLDY0NTY3MzMxNywtMz
-kzMDM3NDAzLDIwODUzMzUxNjAsLTIxMzMxNDg3ODIsMjA4OTg5
-NTExNyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTE5NDgzMzE2OSwyMDAwNjk2NTYwLC0xMj
+k1MTIzNDQ0LDE3ODM2NDcwNDEsMTAwNDk5Nzg1OCw4NDM2Nzky
+NDQsLTEyODE1NzA2NDMsLTE2MDgxNDY3NzksMzM2MDU2NjEzLD
+E4NjQyMzQwNTQsNTYzNzY3MDkwLC0xMDM1MDExNjExLDE5NjM3
+NTY4ODMsNjQ1NjczMzE3LC0zOTMwMzc0MDMsMjA4NTMzNTE2MC
+wtMjEzMzE0ODc4MiwyMDg5ODk1MTE3LDczMDk5ODExNl19
 -->

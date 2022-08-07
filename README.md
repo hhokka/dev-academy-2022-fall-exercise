@@ -31,6 +31,10 @@ cypress:open
 ```
 ### Using the application
 ![alt text](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot1.png?raw=true)
+
+![alt text](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot2.png?raw=true)
+
+![alt text](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot3.png?raw=true)
 ### API
 
     GET http://localhost:3001/api/journeys
@@ -102,11 +106,13 @@ cypress:open
 | 6.8.22|     1| modified tests|
 | 7.8.22|     1| added some documentation|
 | 7.8.22|  0,25| added more documentation|
-| 7.8.22|  0,25| added a screenshot
+| 7.8.22|  0,25| added a screenshot|
+| 7.8.22|   0,5| added more screeshots|
 | total | 49,50| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzNzY3MDkwLC0xMDM1MDExNjExLDE5Nj
-M3NTY4ODMsNjQ1NjczMzE3LC0zOTMwMzc0MDMsMjA4NTMzNTE2
-MCwtMjEzMzE0ODc4MiwyMDg5ODk1MTE3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMzM2MDU2NjEzLDE4NjQyMzQwNTQsNTYzNz
+Y3MDkwLC0xMDM1MDExNjExLDE5NjM3NTY4ODMsNjQ1NjczMzE3
+LC0zOTMwMzc0MDMsMjA4NTMzNTE2MCwtMjEzMzE0ODc4MiwyMD
+g5ODk1MTE3LDczMDk5ODExNl19
 -->

@@ -46,4 +46,6 @@
 | 5.8.22|   1,5| configured cypress, added first test|
 | 5.8.22|   2,5| modified first cypress test, debugged singlestation.js|
 | 6.8.22|   3,5| debugged singlestation.js, wrote one test more|
-| total |    x | | 
+| 6.8.22|     1| modified tests|
+| 7.8.22|     1| added some documentation|
+| total | 49,25| | 

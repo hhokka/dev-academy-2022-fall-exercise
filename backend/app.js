@@ -35,9 +35,9 @@ if (process.env.NODE_ENV === 'test') {
 }
 const validate = async () => {
 
-  const validateJourneys1 = await validator.runJourneyValidation('2021-05.csv')
-  const validateJourneys2 = await validator.runJourneyValidation('2021-06.csv')
-  const validateJourneys3 = await validator.runJourneyValidation('2021-07.csv')
+  const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
+  const validateJourneys2 = await validator.runJourneyValidation('./data/2021-06.csv')
+  const validateJourneys3 = await validator.runJourneyValidation('./data/2021-07.csv')
   const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
 
   /* Don't remove. These are useful for testing purposes.*/

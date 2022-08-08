@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'test') {
 }
 const validateAndLoad = async () => {
 
-  const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
+  /*   const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
   const validateJourneys2 = await validator.runJourneyValidation('./data/2021-06.csv')
   const validateJourneys3 = await validator.runJourneyValidation('./data/2021-07.csv')
   const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
@@ -44,7 +44,7 @@ const validateAndLoad = async () => {
   await loader.loadJourneys('./data/2021-06.csv')
   await loader.loadJourneys('./data/2021-07.csv')
   await loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
-
+ */
 
   /* Don't remove. These are useful for testing purposes. */
   /*
@@ -60,13 +60,13 @@ const validateAndLoad = async () => {
   */
 
   // eslint-disable-next-line no-console
-  console.log('First journey dataset validated: ', validateJourneys1)
+/*   console.log('First journey dataset validated: ', validateJourneys1)
   // eslint-disable-next-line no-console
   console.log('Second journey dataset validated: ', validateJourneys2)
   // eslint-disable-next-line no-console
   console.log('Third journey dataset validated: ', validateJourneys3)
   // eslint-disable-next-line no-console
-  console.log('Bike Station dataset validated: ', validateBikeStations1)
+  console.log('Bike Station dataset validated: ', validateBikeStations1) */
 }
 
 validateAndLoad()

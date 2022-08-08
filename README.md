@@ -160,14 +160,15 @@ Removes all bikeStations in database:
 | 8.8.22|   5,5| debugging building and installing|
 | 8.8.22|  0,25| debugging building and installing #2|
 | 8.8.22|  0,25| debugging installing|
-| total | 58,75| | 
+| 8.8.22|  1,25| added remove all data when starting app| 
+| total | 60,5| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTUwNTk0NCw0MjM4MTI2NDQsMjAzMz
-YxODIzOCwtNDY4NDE4NDkyLC0xOTc2ODUzMzM2LC05MzQ3Njcw
-MjYsLTkzNDc2NzAyNiwyMDU1NjE5NTcyLC0xMTcxNzk3NDA5LC
-0xOTc4OTM3MzkzLC0xNTQ2MzA0NDMxLC0xMTg5NzM4NzUsLTk4
-OTEyOTcxMSwtNTA2MDgyNDA0LDE2NTU3NDkxNTUsMjAwMDY5Nj
-U2MCwtMTI5NTEyMzQ0NCwxNzgzNjQ3MDQxLDEwMDQ5OTc4NTgs
-ODQzNjc5MjQ0XX0=
+eyJoaXN0b3J5IjpbLTY4MzA0MDg4NiwxODI1NTA1OTQ0LDQyMz
+gxMjY0NCwyMDMzNjE4MjM4LC00Njg0MTg0OTIsLTE5NzY4NTMz
+MzYsLTkzNDc2NzAyNiwtOTM0NzY3MDI2LDIwNTU2MTk1NzIsLT
+ExNzE3OTc0MDksLTE5Nzg5MzczOTMsLTE1NDYzMDQ0MzEsLTEx
+ODk3Mzg3NSwtOTg5MTI5NzExLC01MDYwODI0MDQsMTY1NTc0OT
+E1NSwyMDAwNjk2NTYwLC0xMjk1MTIzNDQ0LDE3ODM2NDcwNDEs
+MTAwNDk5Nzg1OF19
 -->

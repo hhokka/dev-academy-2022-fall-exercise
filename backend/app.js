@@ -11,6 +11,8 @@ const { errorHandler } = require('./utils/middleware')
 const logger = require('./utils/logger')
 const validator = require('./utils/validator')
 const loader = require('./utils/loader')
+const BikeStation = require('./models/bikeStation')
+const Journey = require('./models/journey')
 
 logger.info('connecting to', config.MONGODB_URI)
 
@@ -34,7 +36,8 @@ if (process.env.NODE_ENV === 'test') {
   app.use('/api/testing', testingRouter)
 }
 const validateAndLoad = async () => {
-
+  await BikeStation.deleteMany({})
+  await Journey.deleteMany({})
   const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
   const validateJourneys2 = await validator.runJourneyValidation('./data/2021-06.csv')
   const validateJourneys3 = await validator.runJourneyValidation('./data/2021-07.csv')

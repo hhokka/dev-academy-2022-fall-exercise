@@ -10,34 +10,57 @@ The database settings are in .env file which you got by email. Database is fully
 
 
 ## Installation and running
+### Development
 Clone the repository to your own device:
 ```
 git clone https://github.com/hhokka/dev-academy-2022-fall-exercise.git
 ```
-Install and run backend:
+Install and run **backend**:
 ```
-cd dev-academy-2022-fall-excercise/backend
+cd dev-academy-2022-fall-excercise
+cd backend
 npm install
-npm start
+npm run dev
 ```
-Install and run frontend:
+Install and run **frontend**:
 
 Open new command line window
 ```
-cd dev-academy-2022-fall-exercise/frontend
+cd dev-academy-2022-fall-exercise
+cd frontend
 npm install
 npm start
 ```
 Go to address http://localhost:3000
 
-
+### Production
+Clone the repository to your own device:
+```
+git clone https://github.com/hhokka/dev-academy-2022-fall-exercise.git
+```
+Build **frontend** and then serve it:
+```
+cd dev-academy-2022-fall-exercise
+cd frontend
+npm install
+npm run build
+npm install -g serve
+serve -s build
+```
+Start serving the **backend**.
+```
+cd dev-academy-2022-fall-exercise
+cd backend
+npm run start
+```
+Go to address http://localhost:3000
 ### Testing
 
 Tests are run with this command
 ```
 cypress:open
 ```
-### Using the application
+## Using the application
 
 This is the Journey list view. Here you can see all the journeys and their details.
 ![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot5.png?raw=true)
@@ -52,7 +75,7 @@ When you run the backend, the application validates all the .csv files and displ
 ![enter image description here](https://github.com/hhokka/dev-academy-2022-fall-exercise/blob/main/readme/screenshot4.png?raw=true)
 
 
-### API
+## API
 Returns all journeys in database:
 ```
 GET http://localhost:3001/api/journeys
@@ -136,11 +159,11 @@ Removes all bikeStations in database:
 | total | 53,25| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjA4MjQwNCwxNjU1NzQ5MTU1LDIwMD
-A2OTY1NjAsLTEyOTUxMjM0NDQsMTc4MzY0NzA0MSwxMDA0OTk3
-ODU4LDg0MzY3OTI0NCwtMTI4MTU3MDY0MywtMTYwODE0Njc3OS
-wzMzYwNTY2MTMsMTg2NDIzNDA1NCw1NjM3NjcwOTAsLTEwMzUw
-MTE2MTEsMTk2Mzc1Njg4Myw2NDU2NzMzMTcsLTM5MzAzNzQwMy
-wyMDg1MzM1MTYwLC0yMTMzMTQ4NzgyLDIwODk4OTUxMTcsNzMw
-OTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5NzY4NTMzMzYsLTkzNDc2NzAyNiwtOT
+M0NzY3MDI2LDIwNTU2MTk1NzIsLTExNzE3OTc0MDksLTE5Nzg5
+MzczOTMsLTE1NDYzMDQ0MzEsLTExODk3Mzg3NSwtOTg5MTI5Nz
+ExLC01MDYwODI0MDQsMTY1NTc0OTE1NSwyMDAwNjk2NTYwLC0x
+Mjk1MTIzNDQ0LDE3ODM2NDcwNDEsMTAwNDk5Nzg1OCw4NDM2Nz
+kyNDQsLTEyODE1NzA2NDMsLTE2MDgxNDY3NzksMzM2MDU2NjEz
+LDE4NjQyMzQwNTRdfQ==
 -->

@@ -101,6 +101,8 @@ Removes all bikeStations in database:
     
     POST http://localhost:3001/api/bikeStations/reset
 
+## TODO
+- Because MongoDB's quota is too small to load all the data, the application can load only one dataset. It would be good to have a paid subscription of MongoDB witch a larger quota. Application also validates only one of the datasets.
 
 ## Record of working hours
 
@@ -163,15 +165,15 @@ Removes all bikeStations in database:
 | 8.8.22|  0,25| debugging building and installing #2|
 | 8.8.22|  0,25| debugging installing|
 | 8.8.22|  1,25| added remove all data when starting app| 
-| 8.8.22| 10,75| tested loading of all data (fail)|
-| total | 60,5| | 
+| 8.8.22| 10,75| tested loading of all the data (fail)|
+| total | 70,5| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0MDA2MDU5LC0xMTkxMjE0MTc0LC0xNz
-QxNzUzOTYyLC02ODMwNDA4ODYsMTgyNTUwNTk0NCw0MjM4MTI2
-NDQsMjAzMzYxODIzOCwtNDY4NDE4NDkyLC0xOTc2ODUzMzM2LC
-05MzQ3NjcwMjYsLTkzNDc2NzAyNiwyMDU1NjE5NTcyLC0xMTcx
-Nzk3NDA5LC0xOTc4OTM3MzkzLC0xNTQ2MzA0NDMxLC0xMTg5Nz
-M4NzUsLTk4OTEyOTcxMSwtNTA2MDgyNDA0LDE2NTU3NDkxNTUs
-MjAwMDY5NjU2MF19
+eyJoaXN0b3J5IjpbMjAxNTQ5NjYwMywtMTQ3MzcxOTc0OSw3Mz
+Q4MDU5OTYsLTExOTEyMTQxNzQsLTE3NDE3NTM5NjIsLTY4MzA0
+MDg4NiwxODI1NTA1OTQ0LDQyMzgxMjY0NCwyMDMzNjE4MjM4LC
+00Njg0MTg0OTIsLTE5NzY4NTMzMzYsLTkzNDc2NzAyNiwtOTM0
+NzY3MDI2LDIwNTU2MTk1NzIsLTExNzE3OTc0MDksLTE5Nzg5Mz
+czOTMsLTE1NDYzMDQ0MzEsLTExODk3Mzg3NSwtOTg5MTI5NzEx
+LC01MDYwODI0MDRdfQ==
 -->

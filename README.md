@@ -16,6 +16,7 @@ Clone the repository to your own device:
 git clone https://github.com/hhokka/dev-academy-2022-fall-exercise.git
 ```
 Install and run **backend**:
+Copy .env to project root
 ```
 cd dev-academy-2022-fall-excercise
 cd backend
@@ -162,11 +163,11 @@ Removes all bikeStations in database:
 | total | 58,75| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzODEyNjQ0LDIwMzM2MTgyMzgsLTQ2OD
-QxODQ5MiwtMTk3Njg1MzMzNiwtOTM0NzY3MDI2LC05MzQ3Njcw
-MjYsMjA1NTYxOTU3MiwtMTE3MTc5NzQwOSwtMTk3ODkzNzM5My
-wtMTU0NjMwNDQzMSwtMTE4OTczODc1LC05ODkxMjk3MTEsLTUw
-NjA4MjQwNCwxNjU1NzQ5MTU1LDIwMDA2OTY1NjAsLTEyOTUxMj
-M0NDQsMTc4MzY0NzA0MSwxMDA0OTk3ODU4LDg0MzY3OTI0NCwt
-MTI4MTU3MDY0M119
+eyJoaXN0b3J5IjpbMTgyNTUwNTk0NCw0MjM4MTI2NDQsMjAzMz
+YxODIzOCwtNDY4NDE4NDkyLC0xOTc2ODUzMzM2LC05MzQ3Njcw
+MjYsLTkzNDc2NzAyNiwyMDU1NjE5NTcyLC0xMTcxNzk3NDA5LC
+0xOTc4OTM3MzkzLC0xNTQ2MzA0NDMxLC0xMTg5NzM4NzUsLTk4
+OTEyOTcxMSwtNTA2MDgyNDA0LDE2NTU3NDkxNTUsMjAwMDY5Nj
+U2MCwtMTI5NTEyMzQ0NCwxNzgzNjQ3MDQxLDEwMDQ5OTc4NTgs
+ODQzNjc5MjQ0XX0=
 -->

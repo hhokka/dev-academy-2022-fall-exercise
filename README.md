@@ -166,16 +166,16 @@ Removes all bikeStations in database:
 | 8.8.22|  0,25| debugging installing|
 | 8.8.22|  1,25| added remove all data when starting app| 
 | 9.8.22| 10,75| tested loading of all the data (fail)|
-| 8.8.22|  0,25| modified app.js to load and validate only one|
-|  dataset|
-| total | 70,5| | 
+| 9.8.22|  0,25| modified app.js to load and validate only one dataset|
+| 9.8.22|     7| tested loading large data (fail)|
+| total |  70,5| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTYzMDE3MCwtMTY5MzY0Mzk2OCwyMD
-E1NDk2NjAzLC0xNDczNzE5NzQ5LDczNDgwNTk5NiwtMTE5MTIx
-NDE3NCwtMTc0MTc1Mzk2MiwtNjgzMDQwODg2LDE4MjU1MDU5ND
-QsNDIzODEyNjQ0LDIwMzM2MTgyMzgsLTQ2ODQxODQ5MiwtMTk3
-Njg1MzMzNiwtOTM0NzY3MDI2LC05MzQ3NjcwMjYsMjA1NTYxOT
-U3MiwtMTE3MTc5NzQwOSwtMTk3ODkzNzM5MywtMTU0NjMwNDQz
-MSwtMTE4OTczODc1XX0=
+eyJoaXN0b3J5IjpbNTczMjAxMzc4LC0xNjkzNjQzOTY4LDIwMT
+U0OTY2MDMsLTE0NzM3MTk3NDksNzM0ODA1OTk2LC0xMTkxMjE0
+MTc0LC0xNzQxNzUzOTYyLC02ODMwNDA4ODYsMTgyNTUwNTk0NC
+w0MjM4MTI2NDQsMjAzMzYxODIzOCwtNDY4NDE4NDkyLC0xOTc2
+ODUzMzM2LC05MzQ3NjcwMjYsLTkzNDc2NzAyNiwyMDU1NjE5NT
+cyLC0xMTcxNzk3NDA5LC0xOTc4OTM3MzkzLC0xNTQ2MzA0NDMx
+LC0xMTg5NzM4NzVdfQ==
 -->

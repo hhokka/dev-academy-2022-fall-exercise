@@ -35,19 +35,13 @@ if (process.env.NODE_ENV === 'test') {
   const testingRouter = require('./controllers/testing')
   app.use('/api/testing', testingRouter)
 }
-/**
- * Because of the quota of MongoDB this validates and loads only two
- * of the three datasets.
- *
- * Unused code is kept in case we want to change what is loaded and
- * validated. Don't remove commented out code!
- */
+
 const validateAndLoad = async () => {
   await BikeStation.deleteMany({})
   await Journey.deleteMany({})
   const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
-  //const validateJourneys2 = await validator.runJourneyValidation('./data/2021-06.csv')
-  //const validateJourneys3 = await validator.runJourneyValidation('./data/2021-07.csv')
+  const validateJourneys2 = await validator.runJourneyValidation('./data/2021-06.csv')
+  const validateJourneys3 = await validator.runJourneyValidation('./data/2021-07.csv')
   const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
 
   await loader.loadJourneys('./data/2021-05.csv')
@@ -55,26 +49,12 @@ const validateAndLoad = async () => {
   //await loader.loadJourneys('./data/2021-07.csv')
   await loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
 
-
-  /* Don't remove. These are useful for testing purposes. */
-  /*
-  await loader.loadJourneys('./data/small-dataset.csv')
-  await loader.loadJourneys('./data/very-small-dataset.csv')*/
-
-  /* Don't remove. These are useful for testing purposes.*/
-  /*
-  const validateJourneys1 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
-  const validateJourneys2 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
-  const validateJourneys3 = await validator.runJourneyValidation('./data/very-small-dataset-modified.csv')
-  const validateBikeStations1 = await validator.runBikeStationValidation('./data/small-bikeStationDataset.csv')
-  */
-
   // eslint-disable-next-line no-console
   console.log('First journey dataset validated: ', validateJourneys1)
   // eslint-disable-next-line no-console
-  //console.log('Second journey dataset validated: ', validateJourneys2)
+  console.log('Second journey dataset validated: ', validateJourneys2)
   // eslint-disable-next-line no-console
-  //console.log('Third journey dataset validated: ', validateJourneys3)
+  console.log('Third journey dataset validated: ', validateJourneys3)
   // eslint-disable-next-line no-console
   console.log('Bike Station dataset validated: ', validateBikeStations1)
 }

@@ -170,15 +170,16 @@ Removes all bikeStations in database:
 | 9.8.22|     7| tested loading large data (fail)|
 | 9.8.22|     2| modified app.js to validate all datasets and to load two datasets|
 |10.8.22|	  8| tested loading only one full-size journey (fail)
-|10.8.22|     4| tested validating and loading only on journey (success)
+|10.8.22|     4| tested validating and loading only on journey (success)|
+|10.8.22|  0,25| cleaned app.js for return|
 | total |  84,5| | 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg5NDU2MTIsMjExOTEyMzY3NSwtMT
-M5ODU4NzgxNCw1NzMyMDEzNzgsLTE2OTM2NDM5NjgsMjAxNTQ5
-NjYwMywtMTQ3MzcxOTc0OSw3MzQ4MDU5OTYsLTExOTEyMTQxNz
-QsLTE3NDE3NTM5NjIsLTY4MzA0MDg4NiwxODI1NTA1OTQ0LDQy
-MzgxMjY0NCwyMDMzNjE4MjM4LC00Njg0MTg0OTIsLTE5NzY4NT
-MzMzYsLTkzNDc2NzAyNiwtOTM0NzY3MDI2LDIwNTU2MTk1NzIs
-LTExNzE3OTc0MDldfQ==
+eyJoaXN0b3J5IjpbLTEyNzgzNDI4NDksLTEzMTg5NDU2MTIsMj
+ExOTEyMzY3NSwtMTM5ODU4NzgxNCw1NzMyMDEzNzgsLTE2OTM2
+NDM5NjgsMjAxNTQ5NjYwMywtMTQ3MzcxOTc0OSw3MzQ4MDU5OT
+YsLTExOTEyMTQxNzQsLTE3NDE3NTM5NjIsLTY4MzA0MDg4Niwx
+ODI1NTA1OTQ0LDQyMzgxMjY0NCwyMDMzNjE4MjM4LC00Njg0MT
+g0OTIsLTE5NzY4NTMzMzYsLTkzNDc2NzAyNiwtOTM0NzY3MDI2
+LDIwNTU2MTk1NzJdfQ==
 -->

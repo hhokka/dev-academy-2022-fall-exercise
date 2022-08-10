@@ -50,13 +50,13 @@ const validateAndLoad = async () => {
   await loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
 
   // eslint-disable-next-line no-console
-  console.log('First journey dataset validated: ', validateJourneys1)
+  await console.log('First journey dataset validated: ', validateJourneys1)
   // eslint-disable-next-line no-console
   /* console.log('Second journey dataset validated: ', validateJourneys2)
   // eslint-disable-next-line no-console
   console.log('Third journey dataset validated: ', validateJourneys3) */
   // eslint-disable-next-line no-console
-  console.log('Bike Station dataset validated: ', validateBikeStations1)
+  await console.log('Bike Station dataset validated: ', validateBikeStations1)
 }
 
 validateAndLoad()

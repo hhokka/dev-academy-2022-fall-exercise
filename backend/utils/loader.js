@@ -12,8 +12,8 @@ const addJourney = async (data) => {
     const savedJourney = await journey.save()
 
     // Enable this to see when a journey is saved to database
-    // eslint-disable-next-line no-console
-    //console.log('savedJourney: ', savedJourney)
+    //eslint-disable-next-line no-console
+    console.log('savedJourney: ', savedJourney)
 
   }
 }
@@ -23,8 +23,8 @@ const addBikeStations = async (data) => {
   // eslint-disable-next-line no-unused-vars
   const savedBikeStation = await bikeStations.save()
   // Enable this to see when a bike station is saved to database
-  // eslint-disable-next-line no-console
-  //console.log('savedBikeStation: ', savedBikeStation)
+  //eslint-disable-next-line no-console
+  console.log('savedBikeStation: ', savedBikeStation)
 
 }
 

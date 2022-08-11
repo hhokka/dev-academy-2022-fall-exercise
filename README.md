@@ -6,7 +6,7 @@ With this application it is possible for users to see data of journeys made with
 Chosen technologies include React and Node.js with Express. I chose these because I wanted to practice my skills in these technologies.
 
 ## Configurations
-The database settings are in .env file which you got by email. Database is fully configured. Other than what is mentioned in "installation and running" there is no need to configure anything. 
+The database settings are in .env file which you got by different route. Database is fully configured. Other than what is mentioned in "installation and running" there is no need to configure anything. 
 
 
 ## Installation and running

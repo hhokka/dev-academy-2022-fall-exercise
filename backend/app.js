@@ -39,16 +39,18 @@ if (process.env.NODE_ENV === 'test') {
 const validateAndLoad = async () => {
   await BikeStation.deleteMany({})
   await Journey.deleteMany({})
-  const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
-  const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
-
-  await loader.loadJourneys('./data/2021-05.csv')
-  await loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
-
+  //const validateJourneys1 = await validator.runJourneyValidation('./data/2021-05.csv')
+  //const validateBikeStations1 = await validator.runBikeStationValidation('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
   // eslint-disable-next-line no-console
-  console.log('First journey dataset validated: ', validateJourneys1)
+  //console.log('First journey dataset validated: ', validateJourneys1)
   // eslint-disable-next-line no-console
-  console.log('Bike Station dataset validated: ', validateBikeStations1)
+  //console.log('Bike Station dataset validated: ', validateBikeStations1)
+  // await loader.loadJourneys('./data/2021-05.csv')
+  await loader.processCSV('test', './data/2021-05.csv')
+
+  //await loader.loadBikeStations('./data/Helsingin_ja_Espoon_kaupunkipy%C3%B6r%C3%A4asemat_avoin.csv')
+
+
 }
 
 validateAndLoad()

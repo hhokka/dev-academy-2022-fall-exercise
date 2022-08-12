@@ -28,7 +28,74 @@ const addBikeStations = async (data) => {
 
 }
 
-const loadJourneys = (fileName) => {
+async function processCSV (jobName, fileName) {
+  return new Promise((resolve, reject) => {
+    let filePath = fileName
+    let numConcurrent = 0
+    let paused = false
+    const maxConcurrent = 10
+    let stream = fs.createReadStream(filePath)
+      .on('error', (err) => {
+        // handle error
+        console.log('error processing csv')
+        reject(err)
+
+      })
+      .pipe(csv())
+      .on('data', (row) => {
+
+        function checkResume() {
+          --numConcurrent
+          if (paused && numConcurrent < maxConcurrent) {
+            // restart the stream, there's room for more
+            paused = false
+            stream.resume()
+          }
+        }
+        ++numConcurrent
+        createJob(jobName, row).then(checkResume, checkResume)
+        if (numConcurrent >= maxConcurrent) {
+          // pause the stream because we have max number of operations going
+          stream.pause()
+          paused = true
+        }
+      })
+      .on('end', () => {
+        // handle end of CSV
+        console.log('Finished processing csv')
+        resolve(filePath)
+      })
+  })
+}
+
+
+async function createJob (name, data) {
+  let { hostname, port, ip } = data
+  let protocol = 'https'
+  if (port === 80) {
+    protocol = 'http'
+  }
+  let url = protocol + '://' + hostname
+  try {
+    await tls.getHostData(url) // call an external api to get details of hostname
+    return url
+  } catch (error) {
+    // make sure returned promise is rejected
+    throw error
+  }
+}
+
+async function createJob (name, data) {
+  let { hostname, port, ip } = data
+  let protocol = 'https'
+  if (port === 80) {
+    protocol = 'http'
+  }
+  let url = protocol + '://' + hostname
+  addJourney
+  return url
+}
+/* const loadJourneys = (fileName) => {
   return new Promise((resolve, reject) => {
     fs.createReadStream(fileName)
       .pipe(csv.parse({ headers: true }))
@@ -61,6 +128,6 @@ const loadBikeStations = (fileName) => {
       //console.log('addBikeStations, data: ', data)
       addBikeStations(data)
     })
-}
+} */
 
-module.exports = { loadJourneys, loadBikeStations }
+module.exports = { processCSV }

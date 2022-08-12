@@ -6,7 +6,7 @@ With this application it is possible for users to see data of journeys made with
 Chosen technologies include React and Node.js with Express. I chose these because I wanted to practice my skills in these technologies.
 
 ## Configurations
-The database settings are in .env file which you got by different route. Database is fully configured. Other than what is mentioned in "installation and running" there is no need to configure anything. 
+The database settings are in .env file which you got by different route (if not, ask it from hans.hokka@gmail.com). Database is fully configured. Other than what is mentioned in "installation and running" there is no need to configure anything. 
 
 
 ## Installation and running
@@ -175,4 +175,5 @@ Removes all bikeStations in database:
 |11.8.22|  0,25| corrected minor typo
 |12.8.22|  0,25| disabled eslint in cypress config file|
 |12.8.22|  0,25| removed unused files|
-| total | 85,25| | 
+|12.8.22|  0,25| minor change to readme.md|
+| total |  85,5| | 

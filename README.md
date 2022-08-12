@@ -102,7 +102,7 @@ Removes all bikeStations in database:
     POST http://localhost:3001/api/bikeStations/reset
 
 ## TODO
-- Because MongoDB's quota is too small to load all the data, the application can load only one dataset. It would be good to have a paid subscription of MongoDB witch a larger quota. Application also validates only one of the datasets.
+- Because MongoDB's quota is too small to load all the data, the application can load only one dataset. It would be good to have a paid subscription of MongoDB with a larger quota. Application also validates only one of the datasets.
 
 ## Record of working hours
 
@@ -176,4 +176,5 @@ Removes all bikeStations in database:
 |12.8.22|  0,25| disabled eslint in cypress config file|
 |12.8.22|  0,25| removed unused files|
 |12.8.22|  0,25| minor change to readme.md|
-| total |  85,5| | 
+|12.8.22|  0,25| fixed minor typo|
+| total | 85,75| | 

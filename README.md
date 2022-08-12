@@ -173,5 +173,6 @@ Removes all bikeStations in database:
 |10.8.22|     4| tested validating and loading only on journey (success)|
 |10.8.22|  0,25| cleaned app.js for return|
 |11.8.22|  0,25| corrected minor typo
-|12.8.22|  0,25| disabled eslint in cypress config file
+|12.8.22|  0,25| disabled eslint in cypress config file|
+|12.8.22|  0,25| removed unused files|
 | total | 85,25| | 

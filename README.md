@@ -178,4 +178,5 @@ Removes all bikeStations in database:
 | 12.8.22 | 0,25  | minor change to readme.md                                                       |
 | 12.8.22 | 0,25  | fixed minor typo                                                                |
 | 12.8.22 | 9     | tested and debugging loading                                                    |
-|  total  | 85,75 |                                                                                 |
+| 13.8.22 | 2,5   | rewrote loader.js, tested (success)                                             |
+|  total  | 94,75 |                                                                                 |
